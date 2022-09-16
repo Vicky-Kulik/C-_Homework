@@ -1,27 +1,13 @@
-﻿// Задача на нахождение наибольшего из трех чисел
+﻿// Задача на оперделение четности числа
 // введение чисел
-Console.Write("Введите первое число: ") ;
-int num1 = int.Parse(Console.ReadLine ()) ;
+Console.Write("Введите число: ") ;
+int num = int.Parse(Console.ReadLine ()) ;
 
-Console.Write("Введите второе число: ") ;
-int num2 = int.Parse(Console.ReadLine ()) ;
-
-Console.Write("Введите третье число: ") ;
-int num3 = int.Parse(Console.ReadLine ()) ;
-
-int Mmax = 0;
-
-if (num1 > num2) 
+if (num %2 == 0) 
 {
-    Mmax = num1;
+    Console.WriteLine($"Число {num} четное ");
 }
 else
 {
-    Mmax = num2;
+   Console.WriteLine($"Число {num} нечетное ") ;
 }
-if ( num3 > Mmax)
-{
-    Mmax = num3;
-}
-
-Console.WriteLine($"Наибольшее число {Mmax}") ;
